@@ -45,6 +45,8 @@ Besides, translations of Chinese texts are given in parentheses following.
 
 #### For LJSpeech (English)
 
+*For LJSpeech dataset, the overall sound quality of the synthesized speeches is slightly worse than DataBaker. Please focus more on expressiveness and prosody rather than sound quality, much thanks.*
+
 
 | ID | Text | Vanilla | BERT | BERT-Dep(BLSTM) | BERT-Dep(RGGN) | GT |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -74,6 +76,8 @@ Three ablation studies are conducted by removing RGGN_fwd, RGGN_rev, edge labels
 
 
 #### For LJSpeech (English)
+
+-For LJSpeech dataset, there exist many bad cases in **- RGGN_fwd**.-
 
 | ID | Text | Proposed | - RGGN_fwd | - RGGN_rev | - Edge labels | GT |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
