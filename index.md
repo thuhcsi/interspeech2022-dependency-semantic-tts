@@ -1,10 +1,24 @@
----
-layout: default
----
+*Yixuan Zhou\*, Changhe Song\*, Jingbei Li, Zhiyong Wu, Yanyan Bian, Dan Su, Helen Meng*
+
+*\* Equal contribution.*
+
 
 # Abstract
 
 Exploiting rich linguistic information in raw text is crucial for expressive text-to-speech (TTS). As large scale pre-trained text representation develops, bidirectional encoder representations from Transformers (BERT) has been proven to embody semantic information and employed to TTS recently. However, original or simply fine-tuned BERT embeddings still cannot provide sufficient semantic knowledge that expressive TTS models should take into account. In this paper, we propose a word-level semantic representation enhancing method based on dependency structure and pre-trained BERT embedding. The BERT embedding of each word is reprocessed considering its specific dependencies and related words in the sentence, to generate more effective semantic representation for TTS. To better utilize the dependency structure, relational gated graph network (RGGN) is introduced to make semantic information flow and aggregate through the dependency structure. The experimental results show that the proposed method can further improve the naturalness and expressiveness of synthesized speeches on both Mandarin and English datasets.
+
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./imgs/modelframework.jpg"  width="100%">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"> Fig.1: The structure of the proposed model. </div>
+</center>
+
 
 
 # Subjective Evaluation  
@@ -12,6 +26,7 @@ Exploiting rich linguistic information in raw text is crucial for expressive tex
 To present the generality of the proposed method, we train and evaluate on both DataBaker (Mandarin) and LJSpeech (English) datasets. 
 Our proposed method is denoted as **BERT-Dep(RGGN)** and all the models are implemented based on phoneme-input Tacotron 2,  which are described in detail in the paper.
 The sentences are selected randomly from the test set and Internet, thus *some samples do not have the corresponding ground-truth speech.* 
+Besides, translations of Chinese texts are given in parentheses following.
 
 #### For DataBaker (Mandarin)
 
