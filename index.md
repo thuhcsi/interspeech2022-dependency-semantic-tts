@@ -77,7 +77,7 @@ Three ablation studies are conducted by removing RGGN_fwd, RGGN_rev, edge labels
 
 #### For LJSpeech (English)
 
-*For LJSpeech dataset, there exist many bad cases in **- RGGN_fwd**, resulting a very low CMOS in Table 2 of the paper.*
+*For LJSpeech dataset, there exist many bad cases in **- RGGN_fwd**, resulting in a very low CMOS in Table 2 of the paper.*
 
 | ID | Text | Proposed | - RGGN_fwd | - RGGN_rev | - Edge labels | GT |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
